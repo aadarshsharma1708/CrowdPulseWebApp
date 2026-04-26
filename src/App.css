@@ -1,0 +1,42 @@
+::-webkit-scrollbar{
+  width: 0;
+}
+
+.app {
+  --bg-color: #0f172a;
+  --text-color: #f1f5f9;
+  --accent-color: #3b82f6;
+  --secondary-bg: #1e293b;
+  --border-color: #334155;
+  --hover-bg: #1e40af;
+  --button-bg: #3b82f6;
+  --button-text: #ffffff;
+  --card-bg: #1e293b;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page-content {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.page-content > * {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

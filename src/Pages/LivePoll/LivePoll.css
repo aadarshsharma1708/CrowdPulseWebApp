@@ -1,0 +1,150 @@
+.live-page {
+    min-height: 100vh;
+    background: var(--bg-color);
+    font-family: Arial, sans-serif;
+    transition: background 0.3s ease;
+}
+
+.live-container {
+    max-width: 420px;
+    margin: 80px auto;
+    padding: 40px;
+    background: var(--card-bg);
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    box-shadow: 0 8px 20px var(--shadow);
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.success-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.live-container h2 {
+    color: var(--text-color);
+}
+
+.subtitle {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.poll-summary {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: var(--secondary-bg);
+    border-radius: 8px;
+}
+
+.poll-summary h4 {
+    color: var(--text-color);
+    margin: 0 0 5px 0;
+}
+
+.poll-summary p {
+    color: var(--text-color);
+    opacity: 0.7;
+    margin: 0;
+}
+
+/* LINK BOX */
+
+.link-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.link-box input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+.link-box input:focus {
+    border-color: var(--accent-color);
+}
+
+.link-box button {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.link-box button:hover {
+    background: var(--hover-bg);
+}
+
+/* QR */
+
+.qr-box {
+    margin: 20px 0;
+}
+
+/* BUTTONS */
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.primary {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.primary:hover {
+    background: var(--hover-bg);
+}
+
+.secondary {
+    background: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.secondary:hover {
+    background: var(--hover-bg);
+}
+
+.loading {
+    color: var(--text-color);
+    margin: 20px 0;
+    opacity: 0.7;
+}
+
+.preview-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.preview-option {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-size: 14px;
+    padding: 5px;
+}

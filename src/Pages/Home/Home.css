@@ -1,0 +1,7 @@
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, var(--bg-color) 0%, var(--secondary-bg) 100%);
+    transition: background 0.3s ease;
+}

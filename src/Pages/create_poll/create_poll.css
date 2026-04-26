@@ -1,0 +1,195 @@
+.create-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    padding: 20px;
+    transition: background 0.3s ease;
+}
+
+.create-container {
+    max-width: 450px;
+    width: 100%;
+    padding: 40px;
+    background: var(--card-bg);
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    box-shadow: 0 8px 20px var(--shadow);
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-container h2 {
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+.create-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* INPUTS */
+
+.create-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    background: var(--card-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.create-container input:focus {
+    border-color: var(--accent-color);
+}
+
+/* BUTTONS */
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: var(--hover-bg);
+    border: none;
+    border-radius: 8px;
+    color: var(--button-text);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.create-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.info-text {
+    margin-top: 12px;
+    color: var(--text-color);
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 6px;
+}
+
+.add-btn:disabled,
+.create-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* MODAL STYLES */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h3 {
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    background: var(--card-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+.modal-content input:focus {
+    border-color: var(--accent-color);
+}
+
+.modal-content input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.login-btn,
+.cancel-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.login-btn {
+    background: var(--button-bg);
+    color: var(--button-text);
+}
+
+.cancel-btn {
+    background: var(--hover-bg);
+    color: var(--button-text);
+}
+
+.login-btn:disabled,
+.cancel-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.signup-note {
+    font-size: 12px;
+    opacity: 0.7;
+    color: var(--text-color);
+}
