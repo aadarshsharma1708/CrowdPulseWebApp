@@ -16,19 +16,23 @@ import { AuthProvider } from "./context/AuthContext";
 
 function AppContent() {
   const location = useLocation();
+  
+  // Logic to hide Navbar/Footer for the specialized PollView page
   const hideLayout = location.pathname.startsWith("/poll/");
 
   return (
     <div className="app dark">
       {!hideLayout && <Navbar />}
       <div className="page-content">
-        <Routes location={location} key={location.pathname}>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/createPoll" element={<Create_poll />} />
           <Route path="/LivePoll" element={<LivePoll />} />
           <Route path="/LivePoll/:id" element={<LivePoll />} />
           <Route path="/poll/:id" element={<PollView />} />
           <Route path="/Results" element={<Results />} />
+          {/* Optional: Catch-all route to redirect 404s inside the app */}
+          <Route path="*" element={<Home />} />
         </Routes>
       </div>
       {!hideLayout && <Footer />}
