@@ -12,8 +12,7 @@ export const connectWebSocket = (pollId, onMessageCallback) => {
   return new Promise((resolve, reject) => {
     try {
       const WS_URL =
-        import.meta.env.VITE_WS_URL ||
-        "wss://ter1dwohnc.execute-api.ap-south-1.amazonaws.com/prod";
+        import.meta.env.VITE_WS_URL;
 
       // Using pollId in the URL as per API documentation
       const wsUrl = `${WS_URL}?pollId=${pollId}`;

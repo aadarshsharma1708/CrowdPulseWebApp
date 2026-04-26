@@ -3,8 +3,7 @@
  */
 
 const BASE_URL =
-  import.meta.env.VITE_API_URL ||
-  "https://dpqsn2632f.execute-api.ap-south-1.amazonaws.com/Prod";
+  import.meta.env.VITE_API_URL;
 
 /**
  * Generic fetch wrapper with error handling
