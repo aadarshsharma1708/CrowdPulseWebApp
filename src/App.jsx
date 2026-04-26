@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import "./App.css";
-import Create_poll from "./Pages/create_poll/create_poll";
+import Create_poll from "./Pages/create_poll/Create_poll";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import LivePoll from "./Pages/LivePoll/LivePoll";
